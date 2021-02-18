@@ -8,6 +8,8 @@
         position: absolute;
         transition: all .2s;
         outline-offset: 2rem;
+        max-height: 27rem;
+        object-fit: cover;
 
         
         &--p1 {
