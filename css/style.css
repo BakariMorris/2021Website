@@ -47,7 +47,7 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 3rem; }
+  padding: 0; }
 
 .heading-primary {
   color: #fff;
@@ -372,7 +372,8 @@ body {
     .feature-box__logo--container {
       display: flex;
       align-items: center;
-      height: 7rem; }
+      height: 7rem;
+      margin-bottom: 1rem; }
 
 .icon {
   display: inline-block;
