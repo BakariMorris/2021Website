@@ -7,6 +7,7 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     transition: transform .2s;
+    margin-bottom: 5rem;
 
     &__icon {
         background-image: linear-gradient(to right, #7ed56f, #28b485);
@@ -43,11 +44,11 @@
 
     &__logo {
         width: 100%;
+        padding-bottom: 2.1rem;
 
         &--container {
             display: flex;
             align-items: center;
-            height: 7rem;
         }
     }
 }

@@ -1,10 +1,9 @@
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    /* font-size: 16px; */
     line-height: 1.7;
     color: $color-grey-dark;
-    padding: 3rem;
+    box-sizing: border-box;
 }
 
 .heading-primary {
@@ -23,6 +22,11 @@ body {
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @media screen and (max-width: $small) {
+            letter-spacing: 1.5rem;
+            font-size: 5rem;
+        }
     }
 
     &--sub {
@@ -47,6 +51,7 @@ body {
     color: rgba(0,0,0,0);
     transition: all .2s;
     letter-spacing: 2px;
+    width: 100%;
 
     &:hover {
         transform: skewY(1deg) skewX(4deg) scale(1.1); 

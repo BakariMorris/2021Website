@@ -1,5 +1,9 @@
 .composition {
     position: relative;
+    height: 20rem;
+    @media screen and (max-width: $small) {
+        margin-top: 40px;
+    }
 
     &__photo {
         width: 55%;
@@ -25,6 +29,7 @@
         &--p3 {
             left: 20%;
             top: 10rem;
+            object-position: top;
         }
 
         &:hover {

@@ -1,6 +1,12 @@
 .row {
-    max-width: $grid-width;
+    display: flex;
     margin: 0 auto;
+    padding: 0 2rem;
+
+    @media screen and (max-width: $small) {
+        display: block;
+        padding: 0 1.5rem;
+     }
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
@@ -9,15 +15,24 @@
     @include clearfix;
 
     [class^="col-"] {
-        float: left;
+        @media screen and (max-width: $small) {
+            width: 100% !important;
+         }
 
         &:not(:last-child){
             margin-right: $gutter-horizontal;
+            @media screen and (max-width: $small) {
+                margin-right: 0;
+             }
         }
     }
 
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);
+
+        @media screen and (max-width: $small) {
+           width: 100%;
+        }
     }
 
     .col-1-of-3 {
