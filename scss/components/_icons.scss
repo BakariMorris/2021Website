@@ -1,0 +1,21 @@
+.icon {
+    display: inline-block; 
+    background: url(../../img/sm_icon_sprite.png) no-repeat; height: 32px; width: 32px; 
+    margin-right: 1rem;
+
+    &.icon-twitter { 
+         background-position: 0px 0px; 
+        }
+
+    &.icon-linkedin { 
+        background-position: 0px -32px;
+    }
+
+    &.icon-skype { 
+        background-position: 0px -64px;
+    }
+
+    &.icon-email { 
+        background-position: 0px -96px;
+    }
+}

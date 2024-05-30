@@ -18,7 +18,7 @@ body {
         display: block;
         font-size: 6rem;
         font-weight: 400;
-        letter-spacing: 3.5rem;
+        letter-spacing: 2.2rem;
 
         animation-name: moveInLeft;
         animation-duration: 1s;
@@ -29,7 +29,7 @@ body {
         display: block;
         font-size: 2rem;
         font-weight: 400;
-        letter-spacing: 1.75rem;
+        letter-spacing: 0.75rem;
 
         animation-name: moveInRight;
         animation-duration: 1s;
@@ -41,7 +41,7 @@ body {
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
-    display: inline-block;
+    display: block;
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
     color: rgba(0,0,0,0);
@@ -55,13 +55,21 @@ body {
 }
 
 .heading-tertiary {
-    font-size: $default-font-size;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
+.links {
+    font-size: 1.55rem;
+    
+    &:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+}
+
 .paragraph {
-    font-size: $default-font-size;
+    font-size: 1.7rem;
     
     &:not(:last-child) {
         margin-bottom: 3rem;
